@@ -30,6 +30,8 @@ def seed_database(reset: bool = True):
         cursor.execute("DELETE FROM resources;")
         cursor.execute("DELETE FROM risk_assessments;")
         cursor.execute("DELETE FROM climate_observations;")
+        cursor.execute("DELETE FROM live_weather_forecasts;")
+        cursor.execute("DELETE FROM live_weather_observations;")
         cursor.execute("DELETE FROM scenarios;")
         cursor.execute("DELETE FROM regions;")
         conn.commit()
